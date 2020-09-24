@@ -6,7 +6,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.marcas" j· existe'
+	PRINT 'O objeto "trabalho_1.dbo.marcas" j√° existe'
 END
 
 
@@ -20,7 +20,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.funcionarios" j· existe'
+	PRINT 'O objeto "trabalho_1.dbo.funcionarios" j√° existe'
 END
 
 
@@ -41,7 +41,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.clientes" j· existe'
+	PRINT 'O objeto "trabalho_1.dbo.clientes" j√° existe'
 END
 
 
@@ -50,17 +50,17 @@ IF NOT EXISTS (SELECT name FROM trabalho_1.sys.tables WHERE name = 'carros')
 BEGIN
 	CREATE TABLE trabalho_1.dbo.carros (
 		id_carro INTEGER NOT NULL,
-		id_marca INTEGER,
+		id_marca INTEGER NOT NULL,
 		placa VARCHAR(8) NOT NULL,
 		ano INTEGER,
 		num_portas INTEGER,
 		cor VARCHAR(30),
-		moto NUMERIC(3, 1) NOT NULL,
+		motor NUMERIC(3, 1) NOT NULL,
 		valor_diaria NUMERIC(10, 2) NOT NULL
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.carros" j· existe'
+	PRINT 'O objeto "trabalho_1.dbo.carros" j√° existe'
 END
 
 
@@ -69,9 +69,9 @@ IF NOT EXISTS (SELECT name FROM trabalho_1.sys.tables WHERE name = 'locacoes')
 BEGIN
 	CREATE TABLE trabalho_1.dbo.locacoes (
 		id_locacao INTEGER NOT NULL,
-		id_funcionario INTEGER,
-		id_carro INTEGER,
-		cpf_cliente VARCHAR(11),
+		id_funcionario INTEGER NOT NULL,
+		id_carro INTEGER NOT NULL,
+		cpf_cliente VARCHAR(11) NOT NULL,
 		data_locacao DATETIME NOT NULL,
 		data_devolucao_prev DATETIME NOT NULL,
 		data_devolucao_real DATETIME,
@@ -81,7 +81,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.locacoes" j· existe'
+	PRINT 'O objeto "trabalho_1.dbo.locacoes" j√° existe'
 END
 
 
