@@ -6,7 +6,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.marcas" j√° existe'
+	PRINT 'O objeto "trabalho_1.dbo.marcas" j· existe'
 END
 
 
@@ -20,7 +20,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.funcionarios" j√° existe'
+	PRINT 'O objeto "trabalho_1.dbo.funcionarios" j· existe'
 END
 
 
@@ -41,7 +41,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.clientes" j√° existe'
+	PRINT 'O objeto "trabalho_1.dbo.clientes" j· existe'
 END
 
 
@@ -60,7 +60,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.carros" j√° existe'
+	PRINT 'O objeto "trabalho_1.dbo.carros" j· existe'
 END
 
 
@@ -81,7 +81,7 @@ BEGIN
 	)
 END ELSE
 BEGIN
-	PRINT 'O objeto "trabalho_1.dbo.locacoes" j√° existe'
+	PRINT 'O objeto "trabalho_1.dbo.locacoes" j· existe'
 END
 
 

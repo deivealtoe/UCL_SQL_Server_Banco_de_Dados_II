@@ -3,7 +3,7 @@ BEGIN
 	CREATE DATABASE trabalho_1
 END ELSE
 BEGIN
-	PRINT 'Base de Dados "trabalho_1" já existe'
+	PRINT 'Base de Dados trabalho_1 já existe'
 END
 
 
