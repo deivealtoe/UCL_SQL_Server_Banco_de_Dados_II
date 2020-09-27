@@ -29,3 +29,12 @@ Por padrão ele é inicializado como NULL, e pode receber tanto 1 ou 0 bit.
 
 + DECIMAL
 + NUMERIC(<quantidade de dígitos>, <quantidade de dígitos após a vírgula>)
+
+## 4. Temporais
+
++ DATE - Armazena data no formato aaaa/mm/dd.
++ DATETIME - Armzena data e horas no formato aaaa/mm/dd:hh:mm:ss.
++ DATETIME2 - Armazena data e horas com milisegundo no formato aaaa/mm/dd:hh:mm:sssssss.
++ SMALLDATETIME - Armazena data e horas mas respeitando o limite entre '1900-01-01:00:00:00' até '2079-06-06:23:59:59'.
++ TIME - Armazena tempo entre '00:00:00.0000000' até '23:59:59.9999999'.
++ DATETIMEOFFSET - Armazena data e horas incluindo o fuso horário.
