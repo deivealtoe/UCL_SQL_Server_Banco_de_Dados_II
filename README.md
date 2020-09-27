@@ -38,3 +38,12 @@ Por padrão ele é inicializado como NULL, e pode receber tanto 1 ou 0 bit.
 + SMALLDATETIME - Armazena data e horas mas respeitando o limite entre '1900-01-01:00:00:00' até '2079-06-06:23:59:59'.
 + TIME - Armazena tempo entre '00:00:00.0000000' até '23:59:59.9999999'.
 + DATETIMEOFFSET - Armazena data e horas incluindo o fuso horário.
+
+## Principais Constraints/Restrições
+
++ NOT NULL - Não permite valores nulos
++ UNIQUE - Força que todos os valores da coluna sejam diferentes
++ PRIMARY KEY - Usada para referência a um registro, junção de NOT NULL e UNIQUE
++ FOREIGN KEY - Referência a registro(s) de outra tabela
++ CHECK - Força uma condição específica para o valor da coluna
++ DEFAULT - Força um valor padrão quando nenhum é passado
