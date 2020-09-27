@@ -7,30 +7,30 @@
 3. Números
 4. Temporais
 
-## 1. Boleanos
+### 1. Boleanos
 
 Por padrão ele é inicializado como NULL, e pode receber tanto 1 ou 0 bit.
 
-## 2. Caracteres
+### 2. Caracteres
 
 + CHAR - Tamanho fixo. Permite inserir até uma quantidade fixa de caracteres e sempre ocupa todo o espaço reservado.
 + VARCHAR - Tamanho variáveis. Permite inserir até uma quantidade que for definida, porém só usa o espaço que for preenchido.
 
-## 3. Números
+### 3. Números
 
-### Valores inteiros
+#### Valores inteiros
 
 + TINYINT
 + SMALLINT
 + INT
 + BIGINT
 
-### Valores quebrados
+#### Valores quebrados
 
 + DECIMAL
 + NUMERIC(<quantidade de dígitos>, <quantidade de dígitos após a vírgula>)
 
-## 4. Temporais
+### 4. Temporais
 
 + DATE - Armazena data no formato aaaa/mm/dd.
 + DATETIME - Armzena data e horas no formato aaaa/mm/dd:hh:mm:ss.
